@@ -91,6 +91,11 @@ app.get('/api/matches', (req, res) => {
 
 });
 
+// Route racine 
+app.get('/', (req, res) => {
+  res.send('API Score – OK');
+});
+
 // --- DÉMARRAGE DU SERVEUR ---
 // On dit à l'application d'écouter sur le port défini (souvent 3000 en local, ou défini par Render en ligne)
 
